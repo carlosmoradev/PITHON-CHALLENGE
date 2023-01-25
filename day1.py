@@ -10,12 +10,12 @@ rate = float(input("Enter rate: "))
 
 
 if hours >= 40:
-    print("Extratime")
+    status = "extra"
     rate = rate * 1.5
 else:
-    print("Normal")
+    status = "Normal"
 
 pay = hours * rate
 
 
-print("Pay: ", pay)
+print(f"The payment is: ${pay} because you works {status} time")
